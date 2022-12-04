@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icono_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_micuenta"
+            android:title="@string/menu_micuenta"
+            android:icon="@drawable/icono_usuario"/>
+
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/icono_menu"
+            android:title="@string/menu" />
+
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:icon="@drawable/icono_ubi"
+            android:title="@string/menu_ubicacion" />
+
+       <!--Parte de administrador. Usuarios-->
+
+        <item
+            android:id="@+id/nav_agregarusuarios"
+            android:icon="@drawable/icono_agregar"
+            android:title="@string/agregarusuarios" />
+
+        <item
+            android:id="@+id/nav_eliminausuarios"
+            android:icon="@drawable/icono_elim"
+            android:title="@string/eliminausuarios" />
+
+        <item
+            android:id="@+id/nav_modificausuarios"
+            android:icon="@drawable/icono_edit"
+            android:title="@string/modifusuarios" />
+
+        <item
+            android:id="@+id/nav_listausuarios"
+            android:icon="@drawable/icono_lista"
+            android:title="@string/listausuarios" />
+
+        <item
+            android:id="@+id/nav_agregarplatillo"
+            android:title="@string/anadirplatillo"
+            android:icon="@drawable/icono_anadirp"/>
+
+        <item
+            android:id="@+id/nav_eliminarplatillo"
+            android:title="@string/eliminaplatillo"
+            android:icon="@drawable/icono_eliminarp"/>
+
+        <item
+            android:id="@+id/nav_modificarplatillo"
+            android:title="@string/modificarplatillo"
+            android:icon="@drawable/icono_edit"/>
+
+        <item
+            android:id="@+id/nav_agregarreservacion"
+            android:title="@string/realizarreservacion"
+            android:icon="@drawable/icono_anadirp"/>
+
+        <item
+            android:id="@+id/nav_eliminarreservaciones"
+            android:title="@string/eliminarreservacion"
+            android:icon="@drawable/icono_eliminarp"/>
+
+        <item
+            android:id="@+id/nav_listareservaciones"
+            android:title="@string/listareservaciones"
+            android:icon="@drawable/icono_lista"/>
+
+    </group>
+</menu>

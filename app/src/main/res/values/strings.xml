@@ -46,4 +46,35 @@
     <string name="nav_header_desc">nav</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="seleccione">Seleccione</string>
+
+    <string name="menu_home">Home</string>
+
+    <string name="menu_mispedidos">Mis pedidos</string>
+    <string name="menu">Menu</string>
+    <string name="menu_ubicacion">Ubicacion</string>
+    <string name="menu_usuarios">Usuarios</string>
+
+    <string name="agregarusuarios">Agregar usuarios</string>
+
+    <string name="consultausuarios">Consulta de usuarios</string>
+    <string name="listausuarios">Lista usuarios</string>
+
+    <string name="listareservaciones">Lista reservaciones</string>
+
+    <string name="eliminaplatillo">Eliminar platillo</string>
+    <string name="modificarplatillo">Modificar platillo</string>
+
+    <string name="realizarreservacion">Realizar reservacion</string>
+
+    <string name="datosreservacion">Datos de tu reservacion</string>
+
+    <string name="numpersonas">Numero de personas</string>
+    <string name="nummesas">Numero de mesas</string>
+
+    <!--Eliminar reservacion-->
+    <string name="eliminarreservacion">Eliminar reservacion</string>
+    <string name="anadirplatillo">Añadir tratamiento</string>
+
+
+
 </resources>
