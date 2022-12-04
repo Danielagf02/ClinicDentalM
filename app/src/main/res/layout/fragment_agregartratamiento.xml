@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregartratamiento">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvACrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/anadirtratamiento"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#1146CD">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ivAPImagen"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/sabiduria">
+            </ImageView>
+
+            <Button
+                android:id="@+id/btnAPSubirFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subirfoto"
+                android:backgroundTint="#E91E63"
+                android:layout_marginTop="5dp">
+            </Button>
+
+            <EditText
+                android:id="@+id/etAPNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAPTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/tipo"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAPPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/precio"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAPDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/descripcion"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
+                android:maxLength="50">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnAPlatillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anadirtratamiento"
+                android:backgroundTint="#8BC34A"
+                android:layout_marginBottom="50dp">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

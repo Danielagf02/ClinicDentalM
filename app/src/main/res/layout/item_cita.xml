@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLNombreR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="17sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvLApellidoPR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellidop"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="5dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvLApellidoMR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellidom"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="17sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvLFechaR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha"
+                android:textSize="17sp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="3dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvLHoraR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hora"
+                android:textSize="17sp"
+                android:layout_marginBottom="3dp">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+    </com.google.android.material.divider.MaterialDivider>
+
+
+</LinearLayout>

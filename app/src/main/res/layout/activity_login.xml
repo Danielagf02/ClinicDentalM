@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/descripcionimagen"
+                app:srcCompat="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#E91E63"/>
+
+            <EditText
+                android:id="@+id/etLCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/correo"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"/>
+
+            <EditText
+                android:id="@+id/etLContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword">
+            </EditText>
+
+            <!--<TextView
+                android:id="@+id/tvOlvidaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/olvidaste"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"/>-->
+
+            <Button
+                android:id="@+id/btnAcceder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/iniciar"
+                android:backgroundTint="#1146CD"
+                app:cornerRadius="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/aunnotienes"
+                android:textSize="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="150dp"/>
+
+            <TextView
+                android:id="@+id/tvCrear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/creaaqui"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#1146CD"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
