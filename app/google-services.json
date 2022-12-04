@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1016522944316",
+    "project_id": "clinicadental-80028",
+    "storage_bucket": "clinicadental-80028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016522944316:android:134902c3d1640016377839",
+        "android_client_info": {
+          "package_name": "com.example.clinicadental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016522944316-617u3nsjurs5sr7kd1afbln8reb8oe4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clinicadental",
+            "certificate_hash": "7a2be6d1d98cc8e3621ed84478393a9e0668c149"
+          }
+        },
+        {
+          "client_id": "1016522944316-ts25hbes08urat74bhkohfrd6luskike.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcEIdN34QdSGZwei7EoidjrwGU6iJ9x8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016522944316-ts25hbes08urat74bhkohfrd6luskike.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
