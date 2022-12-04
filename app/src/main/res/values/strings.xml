@@ -73,6 +73,10 @@
     <string name="eliminarreservacion">Eliminar cita</string>
     <string name="anadirplatillo">Añadir tratamiento</string>
 
+    <!--Recuperacion de contraseña-->
+    <string name="recuperac">Recuperacion de contraseña</string>
+    <string name="envicarcorreo">Enviar correo de recuperacion</string>
+
 
 
 </resources>

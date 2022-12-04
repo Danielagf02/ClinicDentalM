@@ -1,17 +1,19 @@
 package com.example.clinicadental;
+
 import static com.example.clinicadental.LoginActivity.tiporecuperado;
+
 import android.os.Bundle;
 import android.view.Menu;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+//import com.example.clinicadental.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.example.clinicadental.databinding.ActivityMainBinding;
-
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
         navigationView.setItemIconTintList(null);
-        
+
     }
 
     @Override
