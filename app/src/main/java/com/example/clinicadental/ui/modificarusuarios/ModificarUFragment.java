@@ -1,8 +1,8 @@
 package com.example.clinicadental.ui.modificarusuarios;
 
 import static android.app.Activity.RESULT_OK;
-import static com.example.restauranteeltapanco.CrearUActivity.firestore;
-import static com.example.restauranteeltapanco.CrearUActivity.storage;
+import static com.example.clinicadental.CrearUActivity.firestore;
+import static com.example.clinicadental.CrearUActivity.storage;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,7 +23,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

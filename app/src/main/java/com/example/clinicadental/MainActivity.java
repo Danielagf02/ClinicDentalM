@@ -1,6 +1,6 @@
 package com.example.clinicadental;
 
-import static com.example.restauranteeltapanco.LoginActivity.tiporecuperado;
+import static com.example.clinicadental.LoginActivity.tiporecuperado;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,7 +12,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.restauranteeltapanco.databinding.ActivityMainBinding;
+import com.example.clinicadental.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {

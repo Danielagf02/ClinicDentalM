@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.restauranteeltapanco.Platillo;
-import com.example.restauranteeltapanco.PlatilloAdapter;
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.Platillo;
+import com.example.clinicadental.PlatilloAdapter;
+import com.example.clinicadental.R;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
@@ -36,7 +36,7 @@ public class MenuFragment extends Fragment {
         recyclerListaP.setLayoutManager(new LinearLayoutManager(getContext()));
         mFirestore = FirebaseFirestore.getInstance();
 
-        Query query = mFirestore.collection("platillo");
+        Query query = mFirestore.collection("tratamiento");
 
         FirestoreRecyclerOptions<Platillo> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Platillo>()
                 .setQuery(query,Platillo.class).build();

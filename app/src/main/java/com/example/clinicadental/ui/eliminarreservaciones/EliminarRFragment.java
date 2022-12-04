@@ -1,6 +1,6 @@
 package com.example.clinicadental.ui.eliminarreservaciones;
 
-import static com.example.restauranteeltapanco.CrearUActivity.firestore;
+import static com.example.clinicadental.CrearUActivity.firestore;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -42,16 +42,16 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
     EditText apellidom;
     EditText fecha;
     EditText hora;
-    EditText nopersonas;
-    EditText nomesas;
+   // EditText nopersonas;
+   // EditText nomesas;
 
     String snombre;
     String sapellidop;
     String sapellidom;
     String sfecha;
     String shora;
-    String snopersonas;
-    String snomesas;
+   // String snopersonas;
+    //String snomesas;
 
     Button btnEliminarR;
     Button btnBuscarR;
@@ -80,8 +80,8 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
         apellidom.setEnabled(false);
         fecha.setEnabled(false);
         hora.setEnabled(false);
-        nopersonas.setEnabled(false);
-        nomesas.setEnabled(false);
+      //  nopersonas.setEnabled(false);
+       // nomesas.setEnabled(false);
     }
 
     private void Componentes(View root){
@@ -98,8 +98,8 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
         apellidom = root.findViewById(R.id.etEApellidoMR);
         fecha = root.findViewById(R.id.etEFechaR);
         hora = root.findViewById(R.id.etEHoraR);
-        nopersonas = root.findViewById(R.id.etENoPersonasR);
-        nomesas = root.findViewById(R.id.etNoMesasR);
+        //nopersonas = root.findViewById(R.id.etENoPersonasR);
+        //nomesas = root.findViewById(R.id.etNoMesasR);
     }
 
     private void ButtonComponentes(View root){
@@ -181,7 +181,7 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
 
     public void consultaReservacion(String fechahora){
 
-        DocumentReference docref = firestore.collection("reservacion").document(fechahora);
+        DocumentReference docref = firestore.collection("cita").document(fechahora);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -193,21 +193,21 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
                         sapellidom = (String) document.getData().get("apellido_materno");
                         sfecha = (String) document.getData().get("fecha_reservacion");
                         shora = (String) document.getData().get("hora_reservacion");
-                        snopersonas = (String) document.getData().get("numero_personas");
-                        snomesas = (String) document.getData().get("numero_mesas");
+                      //  snopersonas = (String) document.getData().get("numero_personas");
+                       // snomesas = (String) document.getData().get("numero_mesas");
 
                         nombre.setText(snombre);
                         apellidop.setText(sapellidop);
                         apellidom.setText(sapellidom);
                         fecha.setText(sfecha);
                         hora.setText(shora);
-                        nopersonas.setText(snopersonas);
-                        nomesas.setText(snomesas);
+                      //  nopersonas.setText(snopersonas);
+                       // nomesas.setText(snomesas);
 
                         encontrado = true;
                         btnEliminarR.setEnabled(true);
                     }else{
-                        Toast.makeText(getActivity(), "No se encontro la reservacion", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "No se encontro la cita", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     System.out.println("Error al consultar: " + task.getException());
@@ -224,16 +224,16 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
     public void eliminaUsuario(){
 
         if(encontrado == true){
-            firestore.collection("reservacion").document(fechahora).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+            firestore.collection("cita").document(fechahora).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(getActivity(), "La reservacion se elimino correctamente", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "La cita se elimino correctamente", Toast.LENGTH_SHORT).show();
                     limpiaCampos();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(getActivity(), "Error al eliminar reservacion", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Error al eliminar cita", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -247,8 +247,8 @@ public class EliminarRFragment extends Fragment implements View.OnClickListener{
         apellidom.setText("");
         fecha.setText("");
         hora.setText("");
-        nopersonas.setText("");
-        nomesas.setText("");
+     //   nopersonas.setText("");
+     //   nomesas.setText("");
     }
 
 }

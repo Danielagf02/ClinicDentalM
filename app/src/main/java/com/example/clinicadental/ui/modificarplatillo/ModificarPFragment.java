@@ -1,8 +1,8 @@
 package com.example.clinicadental.ui.modificarplatillo;
 
 import static android.app.Activity.RESULT_OK;
-import static com.example.restauranteeltapanco.CrearUActivity.firestore;
-import static com.example.restauranteeltapanco.CrearUActivity.storage;
+import static com.example.clinicadental.CrearUActivity.firestore;
+import static com.example.clinicadental.CrearUActivity.storage;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,7 +23,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -141,7 +141,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
     /*Busca el usuario y pone sus datos en los campos*/
     public void consultaPlatillo(String nombrep){
 
-        DocumentReference docref = firestore.collection("platillo").document(nombrep);
+        DocumentReference docref = firestore.collection("tratamiento").document(nombrep);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -164,7 +164,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
                         btnModificarP.setEnabled(true);
                         btnAgregarImagen.setEnabled(true);
                     }else{
-                        Toast.makeText(getActivity(), "No se encontro el platillo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "No se encontro el tratamiento", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     System.out.println("Error al consultar: " + task.getException());
@@ -181,7 +181,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
     public void actualizaPlatillo(){
 
         if(encontrado ==true){
-            DocumentReference docref = firestore.collection("platillo").document(snombre);
+            DocumentReference docref = firestore.collection("tratamiento").document(snombre);
 
             docref.update("nombre",nombre.getText().toString().trim(),
                             "tipo",tipo.getText().toString().trim(),
@@ -196,7 +196,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(getActivity(), "Error al actualizar el platillo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Error al actualizar el tratamiento", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -204,7 +204,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
 
     public void cargarImagen(String nombre){
         StorageReference storageRef = FirebaseStorage.getInstance().getReference();
-        storageRef.child("platillo/" + snombre).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageRef.child("tratamiento/" + snombre).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 String url = uri.toString();
@@ -243,7 +243,7 @@ public class ModificarPFragment extends Fragment implements View.OnClickListener
     public void subirFoto(){
 
         StorageReference storageRef = storage.getInstance().getReference();
-        StorageReference usuarioRef = storageRef.child("platillo/" + snombre);
+        StorageReference usuarioRef = storageRef.child("tratamiento/" + snombre);
 
         System.out.println("-----------------------USUARIO REF " + usuarioRef);
 

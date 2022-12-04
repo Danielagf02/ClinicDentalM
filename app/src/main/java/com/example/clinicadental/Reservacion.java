@@ -5,8 +5,7 @@ public class Reservacion {
     private String nombre;
     private String apellido_paterno;
     private String apellido_materno;
-    //private String numero_personas;
-    //private String numero_mesas;
+
     private String fecha_reservacion;
     private String hora_reservacion;
 
@@ -18,8 +17,6 @@ public class Reservacion {
         this.nombre = nombre;
         this.apellido_paterno = apellido_paterno;
         this.apellido_materno = apellido_materno;
-      //  this.numero_personas = numero_personas;
-        //  this.numero_mesas = numero_mesas;
         this.fecha_reservacion = fecha_reservacion;
         this.hora_reservacion = hora_reservacion;
     }

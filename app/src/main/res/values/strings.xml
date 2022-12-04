@@ -22,9 +22,7 @@
     <string name="tipo">Tipo</string>
     <string name="precio">Precio</string>
     <string name="descripcion">Descripción</string>
-    <string name="eliminatatatamiento">Eliminar Tratamiento</string>
     <string name="buscar">Buscar</string>
-    <string name="datosTratamiento">Datos del Tratamiento</string>
     <string name="eliminarcita">Eliminar cita</string>
     <string name="fecha">Fecha</string>
     <string name="hora">Hora</string>
@@ -59,20 +57,20 @@
     <string name="consultausuarios">Consulta de usuarios</string>
     <string name="listausuarios">Lista usuarios</string>
 
-    <string name="listareservaciones">Lista reservaciones</string>
+    <string name="listareservaciones">Lista citas</string>
 
-    <string name="eliminaplatillo">Eliminar platillo</string>
-    <string name="modificarplatillo">Modificar platillo</string>
+    <string name="eliminaplatillo">Eliminar tratamimento</string>
+    <string name="modificarplatillo">Modificar tratamiento</string>
 
-    <string name="realizarreservacion">Realizar reservacion</string>
+    <string name="realizarreservacion">Realizar cita</string>
 
-    <string name="datosreservacion">Datos de tu reservacion</string>
+    <string name="datosreservacion">Datos de tu cita</string>
 
     <string name="numpersonas">Numero de personas</string>
     <string name="nummesas">Numero de mesas</string>
 
     <!--Eliminar reservacion-->
-    <string name="eliminarreservacion">Eliminar reservacion</string>
+    <string name="eliminarreservacion">Eliminar cita</string>
     <string name="anadirplatillo">Añadir tratamiento</string>
 
 

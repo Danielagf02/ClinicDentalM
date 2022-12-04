@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.restauranteeltapanco.R;
-import com.example.restauranteeltapanco.Reservacion;
-import com.example.restauranteeltapanco.ReservacionAdapter;
+import com.example.clinicadental.R;
+import com.example.clinicadental.Reservacion;
+import com.example.clinicadental.ReservacionAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
@@ -36,7 +36,7 @@ public class ListaRFragment extends Fragment{
         recyclerListaR.setLayoutManager(new LinearLayoutManager(getContext()));
         mFirestore = FirebaseFirestore.getInstance();
 
-        Query query = mFirestore.collection("reservacion");
+        Query query = mFirestore.collection("cita");
 
         FirestoreRecyclerOptions<Reservacion> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Reservacion>()
                 .setQuery(query,Reservacion.class).build();

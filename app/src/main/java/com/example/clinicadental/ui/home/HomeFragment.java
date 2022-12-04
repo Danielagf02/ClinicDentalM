@@ -10,8 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.restauranteeltapanco.R;
-import com.example.restauranteeltapanco.ui.menu.MenuViewModel;
+import com.example.clinicadental.R;
+import com.example.clinicadental.ui.menu.MenuViewModel;
 
 public class HomeFragment extends Fragment {
 

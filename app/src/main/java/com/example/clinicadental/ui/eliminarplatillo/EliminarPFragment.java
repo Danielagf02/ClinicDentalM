@@ -1,7 +1,7 @@
 package com.example.clinicadental.ui.eliminarplatillo;
 
-import static com.example.restauranteeltapanco.CrearUActivity.firestore;
-import static com.example.restauranteeltapanco.CrearUActivity.storage;
+import static com.example.clinicadental.CrearUActivity.firestore;
+import static com.example.clinicadental.CrearUActivity.storage;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -123,7 +123,7 @@ public class EliminarPFragment extends Fragment implements View.OnClickListener{
     /*Busca el usuario a eliminar*/
     public void consultaNombre(String nombreb){
 
-        DocumentReference docref = firestore.collection("platillo").document(nombreb);
+        DocumentReference docref = firestore.collection("tratamiento").document(nombreb);
         docref.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
@@ -145,7 +145,7 @@ public class EliminarPFragment extends Fragment implements View.OnClickListener{
                         encontrado = true;
                         btnEliminaP.setEnabled(true);
                     }else{
-                        Toast.makeText(getActivity(), "No se encontro el platillo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "No se encontro el tratamiento", Toast.LENGTH_SHORT).show();
                     }
                 }else{
                     System.out.println("Error al consultar: " + task.getException());
@@ -163,16 +163,16 @@ public class EliminarPFragment extends Fragment implements View.OnClickListener{
 
         if(encontrado == true){
             eliminaImagen(snombre);
-            firestore.collection("platillo").document(snombre).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+            firestore.collection("tratamiento").document(snombre).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void unused) {
-                    Toast.makeText(getActivity(), "El platillo se elimino correctamente", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "El tratamiento se elimino correctamente", Toast.LENGTH_SHORT).show();
                     limpiaCampos();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(getActivity(), "Error al eliminar platillo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Error al eliminar tratamiento", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -180,7 +180,7 @@ public class EliminarPFragment extends Fragment implements View.OnClickListener{
 
     public void cargarImagen(String nombre){
         StorageReference storageRef = FirebaseStorage.getInstance().getReference();
-        storageRef.child("platillo/" + snombre).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageRef.child("tratamiento/" + snombre).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 String url = uri.toString();
@@ -203,7 +203,7 @@ public class EliminarPFragment extends Fragment implements View.OnClickListener{
 
         StorageReference storageRef = storage.getInstance().getReference();
 
-        StorageReference desertRef = storageRef.child("platillo/"+nombre);
+        StorageReference desertRef = storageRef.child("tratamiento/"+nombre);
 
         desertRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

@@ -16,6 +16,22 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClinicaDental"
-        tools:targetApi="31"></application>
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBZNedOWwQA7nMowuOSx_B-QowhtlfYb28" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ClinicaDental.NoActionBar">
+        </activity>
+
+    </application>
+
+
+
 
 </manifest>

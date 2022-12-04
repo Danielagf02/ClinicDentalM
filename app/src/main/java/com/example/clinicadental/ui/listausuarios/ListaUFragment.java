@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.restauranteeltapanco.R;
-import com.example.restauranteeltapanco.Usuario;
-import com.example.restauranteeltapanco.UsuarioAdapter;
+import com.example.clinicadental.R;
+import com.example.clinicadental.Usuario;
+import com.example.clinicadental.UsuarioAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;

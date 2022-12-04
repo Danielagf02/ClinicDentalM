@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.restauranteeltapanco.R;
+import com.example.clinicadental.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -26,10 +26,10 @@ public class UbicacionFragment extends Fragment {
         supportMapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(@NonNull GoogleMap googleMap) {
-                LatLng posres = new LatLng(19.947645767850016, -99.55344761955413);
+                LatLng posres = new LatLng(19.181345150968248, -99.46409845180362);
                 googleMap.addMarker(new MarkerOptions()
                         .position(posres)
-                        .title("Restarurante"));
+                        .title("Clínica dental"));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(posres));
                 googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
                         posres,13

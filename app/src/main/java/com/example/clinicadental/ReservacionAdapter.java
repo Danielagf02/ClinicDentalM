@@ -22,8 +22,6 @@ public class ReservacionAdapter extends FirestoreRecyclerAdapter<Reservacion,Res
         holder.tvLNombreR.setText(reservacion.getNombre());
         holder.tvLApellidoPR.setText(reservacion.getApellido_paterno());
         holder.tvLApellidoMR.setText(reservacion.getApellido_materno());
-      //  holder.tvLNumPersonasR.setText("Numero de personas: " + reservacion.getNumero_personas());
-       // holder.tvLNumMesasR.setText("Numero de mesas: " + reservacion.getNumero_mesas());
         holder.tvLFechaR.setText("Fecha: "+reservacion.getFecha_reservacion());
         holder.tvLHoraR.setText("Hora: "+reservacion.getHora_reservacion());
 
