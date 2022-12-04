@@ -5,8 +5,8 @@ public class Reservacion {
     private String nombre;
     private String apellido_paterno;
     private String apellido_materno;
-    private String numero_personas;
-    private String numero_mesas;
+    //private String numero_personas;
+    //private String numero_mesas;
     private String fecha_reservacion;
     private String hora_reservacion;
 
@@ -14,12 +14,12 @@ public class Reservacion {
 
     }
 
-    public Reservacion(String nombre, String apellido_paterno, String apellido_materno, String numero_personas, String numero_mesas, String fecha_reservacion, String hora_reservacion) {
+    public Reservacion(String nombre, String apellido_paterno, String apellido_materno,  String fecha_reservacion, String hora_reservacion) {
         this.nombre = nombre;
         this.apellido_paterno = apellido_paterno;
         this.apellido_materno = apellido_materno;
-        this.numero_personas = numero_personas;
-        this.numero_mesas = numero_mesas;
+      //  this.numero_personas = numero_personas;
+        //  this.numero_mesas = numero_mesas;
         this.fecha_reservacion = fecha_reservacion;
         this.hora_reservacion = hora_reservacion;
     }
@@ -48,21 +48,21 @@ public class Reservacion {
         this.apellido_materno = apellido_materno;
     }
 
-    public String getNumero_personas() {
-        return numero_personas;
-    }
+    //public String getNumero_personas() {
+      //  return numero_personas;
+    //}
 
-    public void setNumero_personas(String numero_personas) {
-        this.numero_personas = numero_personas;
-    }
+    //public void setNumero_personas(String numero_personas) {
+      //  this.numero_personas = numero_personas;
+    //}
 
-    public String getNumero_mesas() {
-        return numero_mesas;
-    }
+    //public String getNumero_mesas() {
+      //  return numero_mesas;
+    //}
 
-    public void setNumero_mesas(String numero_mesas) {
-        this.numero_mesas = numero_mesas;
-    }
+    //public void setNumero_mesas(String numero_mesas) {
+      //  this.numero_mesas = numero_mesas;
+    //}
 
     public String getFecha_reservacion() {
         return fecha_reservacion;

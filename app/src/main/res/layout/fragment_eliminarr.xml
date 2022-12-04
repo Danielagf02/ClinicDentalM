@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.eliminarreservaciones.EliminarRFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminarreservacion"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginBottom="30dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etBFechaR"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fecha"
+                    android:layout_marginEnd="10dp"
+                    android:enabled="false">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnSeleccionarFB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha"
+                    android:backgroundTint="@color/lightblue">
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etBHoraR"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hora"
+                    android:layout_marginEnd="10dp"
+                    android:enabled="false">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnSeleccionarHB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hora"
+                    android:backgroundTint="@color/lightblue">
+                </Button>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEBuscarR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buscar"
+                android:backgroundTint="@color/blue"
+                android:layout_marginBottom="10dp">
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/datosreservacion"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/etENombreR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etEApellidoPR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/apellidop"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etEApellidoMR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/apellidom"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etEFechaR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha"
+                android:layout_marginBottom="10dp"
+                android:maxLength="8">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etEHoraR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hora"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etENoPersonasR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/numpersonas"
+                android:layout_marginBottom="10dp"
+                android:maxLength="3">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etNoMesasR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nummesas"
+                android:layout_marginBottom="10dp"
+                android:maxLength="3">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnEEliminarR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eliminarreservacion"
+                android:backgroundTint="@color/red"
+                android:layout_marginBottom="30dp">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.clinicadental.home"
+        android:name="com.example.clinicadental.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_micuenta"
-        android:name="com.example.clinicadental.micuenta"
+        android:name="com.example.clinicadental.ui.micuenta.MiCuentaFragment"
         android:label="@string/menu_micuenta"
         tools:layout="@layout/fragment_micuenta" />
 
@@ -25,67 +25,67 @@
 
     <fragment
         android:id="@+id/nav_ubicacion"
-        android:name="com.example.restauranteeltapanco.ui.ubicacion.UbicacionFragment"
+        android:name="com.example.clinicadental.ui.ubicacion.UbicacionFragment"
         android:label="@string/menu_ubicacion"
         tools:layout="@layout/fragment_ubicacion"/>
 
     <fragment
         android:id="@+id/nav_eliminausuarios"
-        android:name="com.example.restauranteeltapanco.ui.eliminarusuarios.EliminarUFragment"
+        android:name="com.example.clinicadental.ui.eliminarusuarios.EliminarUFragment"
         android:label="@string/eliminausuarios"
         tools:layout="@layout/fragment_eliminau"/>
 
     <fragment
         android:id="@+id/nav_modificausuarios"
-        android:name="com.example.restauranteeltapanco.ui.modificarusuarios.ModificarUFragment"
+        android:name="com.example.clinicadental.ui.modificarusuarios.ModificarUFragment"
         android:label="@string/modifusuarios"
         tools:layout="@layout/fragment_modificaru"/>
 
     <fragment
         android:id="@+id/nav_agregarusuarios"
-        android:name="com.example.restauranteeltapanco.ui.agregarusuarios.AgregarUsuariosFragment"
+        android:name="com.example.clinicadental.ui.agregarusuarios.AgregarUsuariosFragment"
         android:label="@string/agregarusuarios"
         tools:layout="@layout/fragment_modificaru"/>
 
     <fragment
         android:id="@+id/nav_listausuarios"
-        android:name="com.example.restauranteeltapanco.ui.listausuarios.ListaUFragment"
+        android:name="com.example.clinicadental.ui.listausuarios.ListaUFragment"
         android:label="@string/listausuarios"
         tools:layout="@layout/fragment_listaru"/>
 
     <fragment
         android:id="@+id/nav_agregarplatillo"
-        android:name="com.example.restauranteeltapanco.ui.agregarplatillo.AgregarPlatilloFragment"
+        android:name="com.example.clinicadental.ui.agregarplatillo.AgregarPlatilloFragment"
         android:label="@string/anadirplatillo"
         tools:layout="@layout/fragment_agregarp"/>
 
     <fragment
         android:id="@+id/nav_eliminarplatillo"
-        android:name="com.example.restauranteeltapanco.ui.eliminarplatillo.EliminarPFragment"
+        android:name="com.example.clinicadental.ui.eliminarplatillo.EliminarPFragment"
         android:label="@string/eliminaplatillo"
         tools:layout="@layout/fragment_eliminap"/>
 
     <fragment
         android:id="@+id/nav_modificarplatillo"
-        android:name="com.example.restauranteeltapanco.ui.modificarplatillo.ModificarPFragment"
+        android:name="com.example.clinicadental.ui.modificarplatillo.ModificarPFragment"
         android:label="@string/modificarplatillo"
         tools:layout="@layout/fragment_modificarp"/>
 
     <fragment
         android:id="@+id/nav_agregarreservacion"
-        android:name="com.example.restauranteeltapanco.ui.agregarreservacion.AgregarRFragment"
+        android:name="com.example.clinicadental.ui.agregarreservacion.AgregarRFragment"
         android:label="@string/realizarreservacion"
         tools:layout="@layout/fragment_realizarreservacion"/>
 
     <fragment
         android:id="@+id/nav_listareservaciones"
-        android:name="com.example.restauranteeltapanco.ui.listareservaciones.ListaRFragment"
+        android:name="com.example.clinicadental.ui.listareservaciones.ListaRFragment"
         android:label="@string/listareservaciones"
         tools:layout="@layout/fragment_listarr"/>
 
     <fragment
         android:id="@+id/nav_eliminarreservaciones"
-        android:name="com.example.restauranteeltapanco.ui.eliminarreservaciones.EliminarRFragment"
+        android:name="com.example.clinicadental.ui.eliminarreservaciones.EliminarRFragment"
         android:label="@string/eliminarreservacion"
         tools:layout="@layout/fragment_eliminarr"/>
 

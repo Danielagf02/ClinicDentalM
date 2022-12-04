@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrearUActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.agregarplatillo.AgregarPlatilloFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -18,10 +18,10 @@
             android:gravity="center">
 
             <TextView
-                android:id="@+id/tvCrear"
+                android:id="@+id/tvACrear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/crearcuenta"
+                android:text="@string/anadirplatillo"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="30dp"
@@ -30,23 +30,23 @@
             </TextView>
 
             <ImageView
-                android:id="@+id/ivCImagen"
+                android:id="@+id/ivAPImagen"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
-                android:src="@drawable/icono_usuario">
+                android:src="@drawable/icono_platillo">
             </ImageView>
 
             <Button
-                android:id="@+id/btnCSubirFoto"
+                android:id="@+id/btnAPSubirFoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/subirfoto"
-                android:backgroundTint="@color/lightblue">
+                android:backgroundTint="@color/lightblue"
+                android:layout_marginTop="5dp">
             </Button>
 
-
             <EditText
-                android:id="@+id/etCNombre"
+                android:id="@+id/etAPNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -57,78 +57,43 @@
             </EditText>
 
             <EditText
-                android:id="@+id/etCApellidoP"
+                android:id="@+id/etAPTipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/apellidop"
-                android:inputType="textPersonName"
-                android:layout_marginBottom="10dp"
-                android:maxLength="20">
-            </EditText>
-
-            <EditText
-                android:id="@+id/etCApellidoM"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/apellidom"
-                android:inputType="textPersonName"
-                android:layout_marginBottom="10dp"
-                android:maxLength="20">
-            </EditText>
-
-            <EditText
-                android:id="@+id/etCTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/telefono"
-                android:inputType="number"
-                android:layout_marginBottom="10dp"
-                android:maxLength="10">
-            </EditText>
-
-            <EditText
-                android:id="@+id/etCCorreo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/correo"
-                android:inputType="textEmailAddress"
-                android:layout_marginBottom="10dp"
-                android:maxLength="30">
-            </EditText>
-
-            <EditText
-                android:id="@+id/etCDireccion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/direccion"
+                android:layout_marginTop="15dp"
+                android:hint="@string/tipo"
                 android:inputType="text"
                 android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAPPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/precio"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etAPDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/descripcion"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
                 android:maxLength="50">
             </EditText>
 
-            <EditText
-                android:id="@+id/etCContra"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/contrasena"
-                android:inputType="textPassword"
-                android:layout_marginBottom="10dp">
-            </EditText>
-
-            <EditText
-                android:id="@+id/etCRContra"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/repetircontra"
-                android:inputType="textPassword"
-                android:layout_marginBottom="20dp">
-            </EditText>
-
             <Button
-                android:id="@+id/btnCrearCuenta"
+                android:id="@+id/btnAPlatillo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/crearcuenta"
+                android:text="@string/anadirplatillo"
                 android:backgroundTint="@color/blue"
                 android:layout_marginBottom="50dp">
             </Button>
@@ -136,6 +101,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

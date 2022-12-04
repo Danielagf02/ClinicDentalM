@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.modificarplatillo.ModificarPFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modificarplatillo"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="30sp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ivMImagen"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/icono_platillo"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etMNombreBuscar"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre"
+                    android:inputType="textPersonName"
+                    android:layout_marginEnd="15dp"
+                    android:maxLength="20">
+                </EditText>
+
+                <Button
+                    android:id="@+id/btnMBuscarNombrePlatillo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buscar"
+                    android:backgroundTint="@color/lightblue"
+                    android:textSize="10dp">
+                </Button>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/datosplatillo"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/etMPNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etMPTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/tipo"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:maxLength="20">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etMPPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/precio"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6">
+            </EditText>
+
+            <EditText
+                android:id="@+id/etMPDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/descripcion"
+                android:inputType="text"
+                android:layout_marginBottom="20dp"
+                android:maxLength="50">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btnMPSubirFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subirfoto"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/lightblue">
+                </Button>
+
+                <Button
+                    android:id="@+id/btnModifPlatillo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guardarc"
+                    android:backgroundTint="@color/blue">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

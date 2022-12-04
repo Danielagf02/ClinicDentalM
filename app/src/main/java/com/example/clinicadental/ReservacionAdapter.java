@@ -22,8 +22,8 @@ public class ReservacionAdapter extends FirestoreRecyclerAdapter<Reservacion,Res
         holder.tvLNombreR.setText(reservacion.getNombre());
         holder.tvLApellidoPR.setText(reservacion.getApellido_paterno());
         holder.tvLApellidoMR.setText(reservacion.getApellido_materno());
-        holder.tvLNumPersonasR.setText("Numero de personas: " + reservacion.getNumero_personas());
-        holder.tvLNumMesasR.setText("Numero de mesas: " + reservacion.getNumero_mesas());
+      //  holder.tvLNumPersonasR.setText("Numero de personas: " + reservacion.getNumero_personas());
+       // holder.tvLNumMesasR.setText("Numero de mesas: " + reservacion.getNumero_mesas());
         holder.tvLFechaR.setText("Fecha: "+reservacion.getFecha_reservacion());
         holder.tvLHoraR.setText("Hora: "+reservacion.getHora_reservacion());
 
@@ -41,8 +41,7 @@ public class ReservacionAdapter extends FirestoreRecyclerAdapter<Reservacion,Res
         TextView tvLNombreR;
         TextView tvLApellidoPR;
         TextView tvLApellidoMR;
-        TextView tvLNumPersonasR;
-        TextView tvLNumMesasR;
+
         TextView tvLFechaR;
         TextView tvLHoraR;
 
@@ -52,8 +51,6 @@ public class ReservacionAdapter extends FirestoreRecyclerAdapter<Reservacion,Res
             tvLNombreR = itemView.findViewById(R.id.tvLNombreR);
             tvLApellidoPR = itemView.findViewById(R.id.tvLApellidoPR);
             tvLApellidoMR = itemView.findViewById(R.id.tvLApellidoMR);
-            tvLNumPersonasR = itemView.findViewById(R.id.tvLNumPersonasR);
-            tvLNumMesasR = itemView.findViewById(R.id.tvLNumMesasR);
             tvLFechaR = itemView.findViewById(R.id.tvLFechaR);
             tvLHoraR = itemView.findViewById(R.id.tvLHoraR);
         }

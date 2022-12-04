@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="25dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/realizarreservacion"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/blue">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/datospersona"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCNombreR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvCApellidoPR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellidop"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvCApellidoMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/apellidom"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvCTelefonoR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telefono"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/datosreservacion"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/etCFechaR"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/fecha"
+                        android:layout_marginEnd="10dp"
+                        android:enabled="false">
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnSeleccionarF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fecha"
+                        android:backgroundTint="@color/lightblue">
+                    </Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/etCHoraR"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hora"
+                        android:layout_marginEnd="10dp"
+                        android:enabled="false">
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/btnSeleccionarH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hora"
+                        android:backgroundTint="@color/lightblue">
+                    </Button>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etCNumeroPR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/numpersonas"
+                    android:inputType="number"
+                    android:layout_marginBottom="10dp"
+                    android:maxLength="3">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etCNumeroMR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nummesas"
+                    android:inputType="number"
+                    android:layout_marginBottom="15dp"
+                    android:maxLength="2">
+                </EditText>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRealizarReservacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/realizarreservacion"
+                android:backgroundTint="@color/blue"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
