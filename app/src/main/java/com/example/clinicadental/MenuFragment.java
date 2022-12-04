@@ -37,7 +37,7 @@ public class MenuFragment extends Fragment {
 
         Query query = mFirestore.collection("platillo");
 
-        FirestoreRecyclerOptions<Tratamiento> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Platillo>()
+        FirestoreRecyclerOptions<Tratamiento> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Tratamiento>()
                 .setQuery(query,Tratamiento.class).build();
 
         mAdapter = new TratamientoAdapter()(firestoreRecyclerOptions);
